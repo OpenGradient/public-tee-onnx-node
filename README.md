@@ -16,6 +16,10 @@ As a basic summary:
 
 Follow the guides above for more in-depth details.
 
+Once the node is set up, from the nitro-enclave parent instance run `nitro-cli describe-enclaves` in order to obtain the PCR measurements for your enclave. 
+
+Confirm that your measurements match that of OpenGradient's [official PCR registry](https://docs.opengradient.ai/learn/architecture/data_nodes) in order to ensure that your data-node, and the nodes used by OpenGradient, are authentic.
+
 ## Run Application
 To run the service simply call `make`
 
@@ -41,4 +45,4 @@ To generate a remote attestation for your node you can run the command
 
 These remote attestations are automatically checked for validity and correctness within the OpenGradient sequencer. This means that any result returned by the OpenGradient blockchain for a TEE inference request will already be verified as authentic and unmodified.
 
-Also included in this project is a script `verify_attestation.py` if you would like to verify the attestation document on your own.
+Also included in this project is a script `verify_attestation.py` if you would like to verify the attestation document on your own. The current expected PCR hashes can be found under `measurements.txt`.
