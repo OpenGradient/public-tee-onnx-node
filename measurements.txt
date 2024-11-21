@@ -1,1 +1,22 @@
-
+[
+  {
+    "EnclaveName": "python-enclave-1.0.0-kaniko",
+    "EnclaveID": "i-0c722f352c0cea22f-enc19275235ea37693",
+    "ProcessID": 848707,
+    "EnclaveCID": 4,
+    "NumberOfCPUs": 2,
+    "CPUIDs": [
+      1,
+      3
+    ],
+    "MemoryMiB": 4096,
+    "State": "RUNNING",
+    "Flags": "NONE",
+    "Measurements": {
+      "HashAlgorithm": "Sha384 { ... }",
+      "PCR0": "e8f20b86339dd3625c10da22fdf735998a763fda1932924a66dbd0c233f76d8dd41c17d748391c1353371be0ea6ef72c",
+      "PCR1": "4b4d5b3661b3efc12920900c80e126e4ce783c522de6c02a2a5bf7af3a2b9327b86776f188e4be1c1c404a129dbda493",
+      "PCR2": "f4396a24f7dea0fceb4c363e3d0ce7b48cbe45272afa7759b178c45225bd19192b556b9d3fbfd08359cc61614eccf061"
+    }
+  }
+]
